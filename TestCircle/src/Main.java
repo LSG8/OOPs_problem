@@ -20,17 +20,17 @@ public class Main {
         // Press Alt+Enter with your caret at the highlighted text to see how
         // IntelliJ IDEA suggests fixing it.
 
-        for(int i=0; i<args.length; i++)//when args=null, then args.length=0
-            System.out.println(args[i]);
+        for(int i=0; i<args.length; i++) {//when args=null, then args.length=0
+            //System.out.println(args[i]);
 
-//        if ( ){
-//            //singleplayer code
-//            System.out.println("Hello singleplayer");
-//        }
-//        else{
-//            //multiplayer code
-//            System.out.println("Hello multiplayer");
-//        }
+            if (args[i].equals("singleplayer")) {
+                //singleplayer code
+                System.out.println("Hello singleplayer");
+            } else {
+                //multiplayer code
+                System.out.println("Hello multiplayer");
+            }
+        }
         //I can access radius variable of circle class here
         System.out.println("Example source of circle class is: "+Circle.exampleSource);
         System.out.println("Example source of square class is: "+Square.exampleSource);
