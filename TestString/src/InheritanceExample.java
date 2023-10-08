@@ -3,15 +3,15 @@ public class InheritanceExample{
         System.out.println("Hello inheritance example");
         CircleForm circle1 = new CircleForm();//object class
         System.out.println(circle1.getArea());
-        System.out.println(circle1.getPerimeter());
-        System.out.println(circle1.getRadius());
-        System.out.println(circle1.getColor());
-        System.out.println(circle1.subClassGetRadius());
+//        System.out.println(circle1.getPerimeter());
+//        System.out.println(circle1.getRadius());
+//        System.out.println(circle1.getColor());
+//        System.out.println(circle1.subClassGetRadius());
         GeneralForm form1 = new GeneralForm(6.3,"White",125.3,25.6);
-        System.out.println(form1.getRadius());
-        System.out.println(form1.getColor());
-        System.out.println(form1.getLen());
-        System.out.println(form1.getWidth());
+//        System.out.println(form1.getRadius());
+//        System.out.println(form1.getColor());
+//        System.out.println(form1.getLen());
+//        System.out.println(form1.getWidth());
         System.out.println(form1.getArea());
         System.out.println(circle1.toString());
     }
@@ -86,4 +86,5 @@ class GeneralForm extends Circle{
     public double getArea(){//polymorphism:: overriding superclass method
         return this.length*this.width;
     }
+
 }
